@@ -1,0 +1,91 @@
+#Header9 {
+  height: 280px;
+  border-bottom: 1px solid $border-color1;
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 180px;
+  }
+  .Header-top {
+    background-color: $background-black;
+    height: 100px;
+    width: 100%;
+    .container {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+    }
+    .top-left-menu {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      .breaking {
+        background-color: $background-red;
+        color: white;
+        padding: $gutter10 $gutter20 $gutter10 $gutter20;
+        font-weight: 700;
+      }
+      p {
+        margin-left: $gutter20;
+        color: white;
+      }
+    }
+    .top-right-icon {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: flex-end;
+      .icon {
+        color: white;
+        width: 1.5em;
+        height: 1.5em;
+      }
+      .icon + .icon {
+        margin-left: $gutter20;
+      }
+    }
+  }
+  .logo {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto;
+    img {
+      width: 220px;
+      height: 70px;
+    }
+  }
+  .menu {
+    flex: 1 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      font-size: $font-size-large;
+      color: $color-dark;
+      font-weight: 600;
+    }
+  }
+  .icons {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .icon {
+      color: $icon-color;
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .icon + .icon {
+      margin-left: $gutter30;
+    }
+    .icon-search {
+      color: $icon-color-black;
+      margin-left: $gutter50;
+    }
+  }
+}
