@@ -1,0 +1,34 @@
+#Header2 {
+  background-color: $background-champagne;
+  height: 330px;
+  .container {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  p {
+    font-size: $font-size-small;
+  }
+  .menu {
+    border-top: 1px solid $border-color1;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    a {
+      font-weight: 600;
+      font-size: $font-size-large;
+      color: $color-dark;
+    }
+  }
+}

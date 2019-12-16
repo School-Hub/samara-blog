@@ -1,0 +1,51 @@
+#Header6 {
+  background-color: $background-gray;
+  height: 180px;
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto;
+    img {
+      width: 220px;
+      height: 70px;
+    }
+  }
+  .menu {
+    flex: 1 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      font-size: $font-size;
+      color: $color-dark;
+      font-weight: 600;
+    }
+    .active {
+      color: $color-green;
+      font-weight: 700;
+    }
+  }
+  .icons {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .icon {
+      color: $icon-color-black;
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .icon + .icon {
+      margin-left: $gutter70;
+    }
+  }
+}

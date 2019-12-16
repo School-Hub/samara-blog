@@ -1,0 +1,10 @@
+// Faruk İpek
+@mixin p1 {
+  font-size: $font-size;
+}
+@mixin p2 {
+  font-size: $font-size-large;
+}
+@mixin p3 {
+  font-size: $font-size-small;
+}

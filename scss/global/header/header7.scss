@@ -1,0 +1,64 @@
+#Header7 {
+  background-color: $background-header;
+  height: 320px;
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo-area {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $border-color1;
+    .icons-left {
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+      .icon {
+        color: $icon-color;
+      }
+    }
+    .icons-right {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .icon {
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .icon + .icon {
+      margin-left: $gutter30;
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 310px;
+        height: 100px;
+      }
+    }
+  }
+  .menu {
+    max-width: $max-width;
+    width: 50%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      font-weight: 600;
+      font-size: $font-size-large;
+      color: $color-dark;
+    }
+    .icon {
+      width: 1.5em;
+      height: 1.5em;
+    }
+  }
+}

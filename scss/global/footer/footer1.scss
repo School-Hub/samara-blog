@@ -1,0 +1,39 @@
+#Footer1 {
+  background-color: $background-gray;
+  height: 450px;
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    img {
+      width: 310px;
+      height: 100px;
+    }
+  }
+  .icons {
+    margin-top: $gutter60;
+    .icon {
+      color: $icon-color;
+    }
+    .icon + .icon {
+      margin-left: $gutter60;
+    }
+  }
+  .menu {
+    margin-top: $gutter60;
+    a {
+      font-size: $font-size-large;
+      color: $color-black;
+      font-weight: 700;
+    }
+    a + a {
+      margin-left: 110px;
+    }
+  }
+}

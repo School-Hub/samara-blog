@@ -1,0 +1,27 @@
+{
+  "name": "samarablog",
+  "version": "1.0.0",
+  "description": "Html - CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Project"
+  ],
+  "author": "KTUN",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farukipekcom/Samara-Blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/farukipekcom/Samara-Blog/issues"
+  },
+  "homepage": "https://github.com/farukipekcom/Samara-Blog#readme"
+}

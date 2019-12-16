@@ -1,0 +1,41 @@
+#Header1 {
+  background-color: $background-champagne;
+  height: 220px;
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    flex: 1;
+    justify-content: flex-start;
+    img {
+      width: 200px;
+      height: 65px;
+    }
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+    justify-content: space-between;
+    a {
+      font-size: 20px;
+      color: $color-dark;
+      font-weight: 600;
+    }
+  }
+  .icons {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .icon {
+      width: 1.5em;
+      height: 1.5em;
+    }
+    .icon + .icon {
+      margin-left: $gutter30;
+    }
+  }
+}

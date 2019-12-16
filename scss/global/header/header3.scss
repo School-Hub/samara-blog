@@ -1,0 +1,40 @@
+#Header3 {
+  background-color: $background-champagne;
+  height: 320px;
+  .container {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+      width: 310px;
+      height: 100px;
+    }
+  }
+  .menu {
+    border-top: 1px solid $border-color1;
+    max-width: $max-width;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      font-weight: 600;
+      font-size: $font-size-large;
+      color: $color-dark;
+    }
+    .icon {
+      width: 1.5em;
+      height: 1.5em;
+    }
+  }
+}

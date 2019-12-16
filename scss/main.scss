@@ -1,0 +1,19 @@
+@import "config/variable";
+@import "config/mixin";
+
+// Helper
+@import "helper/formalize";
+@import "helper/normalize";
+@import "helper/global";
+
+// Global/Header
+@import "global/header/header1";
+@import "global/header/header2";
+@import "global/header/header3";
+@import "global/header/header4";
+@import "global/header/header5";
+@import "global/header/header6";
+@import "global/header/header7";
+
+// Global/Footer
+@import "global/footer/footer1";
