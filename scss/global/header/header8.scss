@@ -1,0 +1,85 @@
+#Header8 {
+  background-color: $background-header;
+  height: 420px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Header-top {
+    background-color: $background-black;
+    height: 100px;
+    width: 100%;
+    .container {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+    }
+    .top-left-menu {
+      display: flex;
+      flex: 1;
+      a {
+        color: white;
+      }
+      a + a::before {
+        margin-left: $gutter20;
+        margin-right: $gutter20;
+        content: " | ";
+      }
+    }
+    .top-right-icon {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: flex-end;
+      .icon {
+        color: white;
+        width: 1.5em;
+        height: 1.5em;
+      }
+      .icon + .icon {
+        margin-left: $gutter20;
+      }
+    }
+  }
+  .logo-area {
+    height: 240px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .logo {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 310px;
+        height: 100px;
+      }
+    }
+  }
+  .menu {
+    border-top: 1px solid $border-color1;
+    height: 80px;
+    .container {
+      width: 70%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      .active {
+        background-color: $background-red;
+        color: white;
+        padding: $gutter10 $gutter20 $gutter10 $gutter20;
+      }
+      a {
+        font-weight: 600;
+        font-size: $font-size-large;
+        color: $color-dark;
+      }
+      a + a {
+        margin-left: 20px;
+      }
+    }
+  }
+}
