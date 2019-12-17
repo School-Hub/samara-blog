@@ -17,40 +17,7 @@
       height: 65px;
     }
   }
-  .menu-list {
-    display: flex;
-    flex-direction: column;
-    @include mq("desktop") {
-      display: flex;
-      flex-direction: row;
-      flex: 2;
-      justify-content: space-evenly;
-    }
-  }
   .menu {
-    opacity: 0;
-    pointer-events: none;
-    position: fixed;
-    background-color: white;
-    width: 100%;
-    left: 0px;
-    right: 0px;
-    top: 80px;
-    padding: $gutter20;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    @include mq("desktop") {
-      opacity: 1;
-      pointer-events: auto;
-      position: static;
-      background-color: transparent;
-      flex-direction: row;
-      box-shadow: none;
-      display: flex;
-      flex: 3;
-      justify-content: space-evenly;
-    }
     a {
       padding-bottom: $gutter05;
       border-bottom: 1px solid $border-color1;
@@ -67,21 +34,9 @@
     }
   }
   .icons {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: $gutter20;
-    @include mq("desktop") {
-      justify-content: flex-end;
+    margin-top: 20px;
+    @include mq("tablet") {
       margin-top: 0;
-    }
-    .icon {
-      width: 1.5em;
-      height: 1.5em;
-    }
-    .icon + .icon {
-      margin-left: $gutter30;
     }
   }
 }

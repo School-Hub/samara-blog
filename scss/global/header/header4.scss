@@ -1,7 +1,7 @@
 #Header4 {
   background-color: $background-gray;
   height: 80px;
-  @include mq("tablet") {
+  @include mq("desktop") {
     height: 180px;
   }
   .container {
@@ -16,12 +16,16 @@
     flex-direction: column;
     justify-content: center;
     img {
-      width: 300px;
-      height: 70px;
+      width: 200px;
+      @include mq("desktop") {
+        width: 300px;
+        height: 70px;
+      }
     }
   }
   .icons {
     display: flex;
+    flex: 0;
     flex-direction: row;
     align-items: center;
     margin-left: auto;
@@ -30,7 +34,10 @@
       height: 1.5em;
     }
     .icon + .icon {
-      margin-left: $gutter60;
+      margin-left: $gutter30;
+      @include mq("desktop") {
+        margin-left: $gutter60;
+      }
     }
   }
 }

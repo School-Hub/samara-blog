@@ -1,15 +1,27 @@
 #Header8 {
   background-color: $background-header1;
-  height: 420px;
+  height: 80px;
+  @include mq("desktop") {
+    height: 420px;
+  }
   .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    height: 100%;
     align-items: center;
+    @include mq("desktop") {
+      height: max-content;
+      flex-direction: column;
+    }
   }
   .Header-top {
-    background-color: $background-black;
-    height: 100px;
-    width: 100%;
+    display: none;
+    @include mq("desktop") {
+      display: block;
+      background-color: $background-black;
+      height: 100px;
+      width: 100%;
+    }
     .container {
       display: flex;
       flex-direction: row;
@@ -43,43 +55,85 @@
     }
   }
   .logo-area {
-    height: 240px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include mq("desktop") {
+      height: 240px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     .logo {
       display: flex;
       justify-content: center;
       img {
-        width: 310px;
-        height: 100px;
+        width: 200px;
+        @include mq("desktop") {
+          width: 310px;
+          height: 100px;
+        }
       }
     }
   }
   .menu {
-    border-top: 1px solid $border-color1;
-    height: 80px;
-    .container {
-      width: 70%;
-      height: 100%;
+    @include mq("desktop") {
+    }
+  }
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    @include mq("desktop") {
       display: flex;
       flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
+      flex: 2;
+      justify-content: space-evenly;
+    }
+  }
+  .menu {
+    border-top: 0;
+    @include mq("desktop") {
+      border-top: 1px solid $border-color1;
+      height: 80px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      @include mq("desktop") {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+      }
       .active {
         background-color: $background-red;
         color: white;
         padding: $gutter10 $gutter20 $gutter10 $gutter20;
       }
-      a {
-        font-weight: 600;
-        font-size: $font-size-large;
-        color: $color-dark;
+    }
+    a {
+      padding-bottom: $gutter05;
+      border-bottom: 1px solid $border-color1;
+      width: 100%;
+      @include mq("desktop") {
+        border: 0px;
+        padding-bottom: 0px;
+        width: max-content;
       }
-      a + a {
-        margin-left: 20px;
+    }
+    a + a {
+      margin-top: $gutter20;
+      @include mq("desktop") {
+        margin-top: 0px;
       }
     }
   }
+}
+#Header8.menu-show .menu {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
 }

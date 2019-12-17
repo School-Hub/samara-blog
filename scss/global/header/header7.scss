@@ -1,6 +1,9 @@
 #Header7 {
   background-color: $background-header1;
-  height: 320px;
+  height: 80px;
+  @include mq("desktop") {
+    height: 320px;
+  }
   .container {
     height: 100%;
     display: flex;
@@ -12,19 +15,28 @@
     width: 100%;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid $border-color1;
+    border-bottom: 0px;
+    @include mq("desktop") {
+      border-bottom: 1px solid $border-color1;
+    }
     .icons-left {
-      flex: 1;
-      display: flex;
-      justify-content: flex-start;
+      display: none;
+      @include mq("desktop") {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+      }
       .icon {
         color: $icon-color;
       }
     }
     .icons-right {
-      flex: 1;
-      display: flex;
-      justify-content: flex-end;
+      display: none;
+      @include mq("desktop") {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+      }
     }
     .icon {
       width: 1.5em;
@@ -36,29 +48,36 @@
     .logo {
       display: flex;
       justify-content: center;
-
       img {
-        width: 310px;
-        height: 100px;
+        width: 200px;
+        @include mq("desktop") {
+          width: 310px;
+          height: 100px;
+        }
       }
     }
   }
+
   .menu {
-    max-width: $max-width;
-    width: 50%;
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     a {
-      font-weight: 600;
-      font-size: $font-size-large;
-      color: $color-dark;
+      padding-bottom: $gutter05;
+      border-bottom: 1px solid $border-color1;
+      @include mq("desktop") {
+        border: 0px;
+        padding-bottom: 0px;
+      }
     }
-    .icon {
-      width: 1.5em;
-      height: 1.5em;
+    a + a {
+      margin-top: $gutter20;
+      @include mq("desktop") {
+        margin-top: 0px;
+      }
     }
   }
+}
+
+#Header7.menu-show .menu {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
 }
