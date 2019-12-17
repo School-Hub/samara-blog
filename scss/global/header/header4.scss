@@ -1,6 +1,9 @@
 #Header4 {
   background-color: $background-gray;
-  height: 180px;
+  height: 80px;
+  @include mq("tablet") {
+    height: 180px;
+  }
   .container {
     height: 100%;
     display: flex;

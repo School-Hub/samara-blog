@@ -32,6 +32,8 @@ h4 {
   max-width: $max-width;
   margin-left: auto;
   margin-right: auto;
+  padding-left: $gutter20;
+  padding-right: $gutter20;
 }
 
 .icon {
@@ -52,4 +54,39 @@ h4 {
 }
 .icon-youtube {
   color: #f61c0d;
+}
+button {
+  background-color: transparent;
+}
+
+.menu {
+  a {
+    font-family: $font-family-raleway;
+    font-size: $font-size;
+    color: $color-dark;
+    font-weight: 600;
+    text-align: center;
+    @include mq("desktop") {
+      font-size: $font-size-menu;
+      font-weight: 700;
+    }
+  }
+}
+.Header-switch {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin-left: auto;
+  @include mq("desktop") {
+    display: none;
+  }
+  .icon {
+    width: 1.5em;
+    height: 1.5em;
+  }
+}
+.menu-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
