@@ -15,7 +15,8 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "gulp-webserver": "^0.9.1"
   },
   "repository": {
     "type": "git",
