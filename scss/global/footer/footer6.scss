@@ -1,0 +1,98 @@
+#Footer6 {
+  background-color: $background-gray;
+  height: max-content;
+  padding-top: $gutter40;
+  padding-bottom: $gutter40;
+  @include mq("tablet") {
+    height: max-content;
+    padding-top: $gutter80;
+    padding-bottom: $gutter80;
+  }
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include mq("tablet") {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 200px;
+      @include mq("tablet") {
+        width: 260px;
+        height: 85px;
+      }
+    }
+    p {
+      margin-top: $gutter10;
+      color: $color-gray;
+      font-weight: 600;
+    }
+  }
+  .Footer-icons {
+    margin-top: $gutter30;
+    @include mq("tablet") {
+      margin-top: $gutter60;
+    }
+    .icon {
+      color: $icon-color;
+      width: 1.5em;
+      height: 1.5em;
+      @include mq("tablet") {
+        width: 2em;
+        height: 2em;
+      }
+    }
+    .icon + .icon {
+      margin-left: $gutter20;
+      @include mq("tablet") {
+        margin-left: $gutter60;
+      }
+    }
+  }
+  .instagram {
+    margin-top: $gutter60;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: none;
+    @include mq("tablet") {
+      display: flex;
+    }
+    h3 {
+      color: $color-gray;
+      font-weight: 600;
+    }
+    .photos {
+      margin-top: $gutter20;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      @include mq("desktop") {
+        width: 90%;
+      }
+      @include mq("large") {
+        width: 75%;
+      }
+      img {
+        width: 100px;
+        @include mq("tablet") {
+          width: 130px;
+        }
+        @include mq("desktop") {
+          width: 150px;
+        }
+        @include mq("large") {
+          width: 170px;
+        }
+      }
+    }
+  }
+}
