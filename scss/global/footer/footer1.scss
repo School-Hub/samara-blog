@@ -1,39 +1,73 @@
 #Footer1 {
   background-color: $background-gray;
-  height: 450px;
+  height: max-content;
   .container {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    padding-top: $gutter40;
+    padding-bottom: $gutter40;
+    @include mq("tablet") {
+      align-items: center;
+      padding-top: $gutter80;
+      padding-bottom: $gutter80;
+    }
   }
   .logo {
     display: flex;
     align-items: center;
     img {
-      width: 310px;
-      height: 100px;
+      width: 200px;
+      @include mq("tablet") {
+        width: 310px;
+        height: 100px;
+      }
     }
   }
-  .icons {
-    margin-top: $gutter60;
+  .Footer-icons {
+    margin-top: $gutter30;
+    @include mq("tablet") {
+      margin-top: $gutter60;
+    }
     .icon {
       color: $icon-color;
+      width: 1.5em;
+      height: 1.5em;
+      @include mq("tablet") {
+        width: 2em;
+        height: 2em;
+      }
     }
     .icon + .icon {
-      margin-left: $gutter60;
+      margin-left: $gutter20;
+      @include mq("tablet") {
+        margin-left: $gutter60;
+      }
     }
   }
-  .menu {
-    margin-top: $gutter60;
+  .Footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: $gutter30;
+    @include mq("tablet") {
+      margin-top: $gutter60;
+      flex-direction: row;
+      width: 60%;
+    }
     a {
       font-size: $font-size-large;
       color: $color-black;
       font-weight: 700;
     }
     a + a {
-      margin-left: 110px;
+      margin-top: $gutter20;
+      @include mq("tablet") {
+        margin-top: 0px;
+      }
     }
   }
 }

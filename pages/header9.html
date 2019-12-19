@@ -13,6 +13,12 @@
 	<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
 		xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<defs>
+			<symbol id="icon-menu" viewbox="0 0 448 512">
+				<title>menu</title>
+				<path fill="currentColor"
+					d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+				</path>
+			</symbol>
 			<symbol id="icon-search" viewbox="0 0 512 512">
 				<title>search</title>
 				<path fill="currentColor"
@@ -45,6 +51,8 @@
 			</symbol>
 		</defs>
 	</svg>
+
+
 	<header class="Header" id="Header9">
 		<div class="Header-top">
 			<div class="container">
@@ -71,21 +79,31 @@
 		<div class="container">
 			<div class="logo">
 				<a href="#"><img src="../img/logo.png"> </a>
-			</div>
-			<div class="menu">
-				<a href="">HOME</a>
-				<a href="">FEATURES</a>
-				<a href="">LIFE</a>
-				<a href="">ABOUT ME</a>
-				<a href="">CONTACT</a>
-			</div>
-			<div class="icons">
-				<svg class="icon icon-search">
-					<use xlink:href="#icon-search"></use>
+			</div><button class="Header-switch" type="button">
+				<svg class="icon icon-menu">
+					<use xlink:href="#icon-menu"></use>
 				</svg>
+			</button>
+			<div class="menu">
+				<div class="menu-list">
+					<a href="">HOME</a>
+					<a href="">FEATURES</a>
+					<a href="">LIFE</a>
+					<a href="">ABOUT ME</a>
+					<a href="">CONTACT</a>
+				</div>
+				<div class="icons">
+					<svg class="icon icon-search">
+						<use xlink:href="#icon-search"></use>
+					</svg>
+				</div>
 			</div>
 		</div>
 	</header>
+
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script src="../js/main.js "></script>
+
 </body>
 
 </html>

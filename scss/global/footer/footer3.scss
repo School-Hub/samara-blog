@@ -1,0 +1,232 @@
+#Footer3 {
+  background-color: $background-black;
+  height: max-content;
+  padding-top: $gutter40;
+  @include mq("tablet") {
+    height: max-content;
+    padding-top: $gutter80;
+  }
+  @include mq("desktop") {
+    height: max-content;
+    padding-top: $gutter80;
+  }
+  .container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
+  .footer-top {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: $gutter40;
+    @include mq("tablet") {
+      flex-direction: column;
+    }
+    @include mq("desktop") {
+      flex-direction: row;
+    }
+    .left {
+      flex: 1;
+      padding-right: $gutter30;
+      @include mq("tablet") {
+        padding-right: $gutter30;
+      }
+      p {
+        margin-top: $gutter30;
+        color: white;
+        line-height: 1.5em;
+      }
+      .Footer-icons {
+        margin-top: $gutter30;
+      }
+    }
+    .right {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      @include mq("tablet") {
+        flex-direction: row;
+      }
+      .first {
+        width: 100%;
+        @include mq("tablet") {
+          padding-right: $gutter30;
+        }
+        @include mq("desktop") {
+          width: 50%;
+        }
+        h3 {
+          margin-top: $gutter30;
+          font-size: 24px;
+          color: white;
+        }
+
+        .post {
+          display: flex;
+          align-items: center;
+          margin-top: $gutter30;
+          img {
+            width: 100px;
+            @include mq("tablet") {
+              width: 160px;
+              height: 110px;
+            }
+            @include mq("desktop") {
+              width: 110px;
+              height: 70px;
+            }
+            @include mq("large") {
+              width: 160px;
+              height: 110px;
+            }
+          }
+          .details {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-evenly;
+            margin-left: $gutter10;
+            @include mq("tablet") {
+              margin-left: $gutter30;
+            }
+            @include mq("desktop") {
+              margin-left: $gutter10;
+            }
+            @include mq("large") {
+              margin-left: $gutter30;
+            }
+            h4 {
+              color: white;
+              font-size: 14px;
+              line-height: 1.5em;
+              @include mq("tablet") {
+                font-size: 16px;
+                line-height: 1.4em;
+              }
+              @include mq("desktop") {
+                font-size: 13px;
+              }
+              @include mq("large") {
+                font-size: 16px;
+                line-height: 1.4em;
+              }
+            }
+            p {
+              color: $color-gray;
+              font-size: 14px;
+              line-height: 1.2em;
+              margin-top: $gutter10;
+              @include mq("tablet") {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+      .second {
+        width: 100%;
+        @include mq("tablet") {
+          padding-right: $gutter30;
+        }
+        @include mq("desktop") {
+          width: 50%;
+        }
+        h3 {
+          margin-top: $gutter30;
+          font-size: 24px;
+          color: white;
+        }
+        .post {
+          display: flex;
+          align-items: center;
+          margin-top: $gutter30;
+          img {
+            width: 100px;
+            @include mq("tablet") {
+              width: 160px;
+              height: 110px;
+            }
+            @include mq("desktop") {
+              width: 110px;
+              height: 70px;
+            }
+            @include mq("large") {
+              width: 160px;
+              height: 110px;
+            }
+          }
+          .details {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-evenly;
+            margin-left: $gutter10;
+            @include mq("tablet") {
+              margin-left: $gutter30;
+            }
+            @include mq("desktop") {
+              margin-left: $gutter10;
+            }
+            @include mq("large") {
+              margin-left: $gutter30;
+            }
+            h4 {
+              color: white;
+              font-size: 14px;
+              line-height: 1.5em;
+              @include mq("tablet") {
+                font-size: 16px;
+                line-height: 1.4em;
+              }
+              @include mq("desktop") {
+                font-size: 13px;
+              }
+              @include mq("large") {
+                font-size: 16px;
+                line-height: 1.4em;
+              }
+            }
+            p {
+              color: $color-gray;
+              font-size: 14px;
+              line-height: 1.2em;
+              margin-top: $gutter10;
+              @include mq("tablet") {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid $border-color1;
+    width: 100%;
+    @include mq("tablet") {
+      height: 80px;
+    }
+    @include mq("desktop") {
+      height: 80px;
+    }
+    p {
+      color: #c9c9c9;
+    }
+  }
+  .Footer-icons {
+    flex: 1;
+    display: flex;
+    .icon {
+      color: $icon-color;
+      width: 1.7em;
+      height: 1.7em;
+    }
+    .icon + .icon {
+      margin-left: $gutter30;
+    }
+  }
+}

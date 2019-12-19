@@ -1,6 +1,9 @@
 #Header6 {
   background-color: $background-gray;
-  height: 180px;
+  height: 80px;
+  @include mq("desktop") {
+    height: 180px;
+  }
   .container {
     height: 100%;
     display: flex;
@@ -14,20 +17,27 @@
     justify-content: center;
     margin-right: auto;
     img {
-      width: 220px;
-      height: 70px;
+      width: 200px;
+      @include mq("desktop") {
+        width: 220px;
+        height: 70px;
+      }
     }
   }
   .menu {
-    flex: 1 100px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     a {
-      font-size: $font-size;
-      color: $color-dark;
-      font-weight: 600;
+      padding-bottom: $gutter05;
+      border-bottom: 1px solid $border-color1;
+      @include mq("desktop") {
+        border: 0px;
+        padding-bottom: 0px;
+      }
+    }
+    a + a {
+      margin-top: $gutter20;
+      @include mq("desktop") {
+        margin-top: 0px;
+      }
     }
     .active {
       color: $color-green;
@@ -35,17 +45,17 @@
     }
   }
   .icons {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    .icon {
-      color: $icon-color-black;
-      width: 1.5em;
-      height: 1.5em;
-    }
-    .icon + .icon {
-      margin-left: $gutter70;
+    display: none;
+    @include mq("desktop") {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
     }
   }
+}
+#Header6.menu-show .menu {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
 }
